@@ -50,6 +50,9 @@
 		</tr>
 	</table>
 	
+	<a href="change-status?id=${e.getId() }&status=${e.getStatus() }"> <button>STATUS</button> </a>
+	
+	
 	<a href="addedupage?id=${e.getId() }"> <button>Add Education</button> </a>
 	
 	<h1>Education Details</h1>
@@ -83,7 +86,7 @@
 	
 	
 	
-	
+		<center> <a href="all"> <button>back</button> </a> </center>
 	
 </body>
 </html>

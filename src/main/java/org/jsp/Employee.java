@@ -17,6 +17,7 @@ public class Employee {
 	private String department;
 	private double salary;
 	private EmployeeStatus status;
+	private String password;
 
 	public Employee() {
 	}
@@ -95,6 +96,14 @@ public class Employee {
 
 	public void setStatus(EmployeeStatus status) {
 		this.status = status;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

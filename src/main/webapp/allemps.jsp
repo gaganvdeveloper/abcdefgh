@@ -31,6 +31,7 @@
 			<th>Phone Number</th>
 			<th>Department</th>
 			<th>Salary</th>
+			<th>Status</th>
 			<th colspan="2">Action</th>
 		</tr>
 		<c:forEach var="e" items="${el }">
@@ -41,12 +42,29 @@
 				<td>${e.getPhone() }</td>
 				<td>${e.getDepartment() }</td>
 				<td>${e.getSalary() }</td>
+				<td>${e.getStatus() }</td>
 				<td> <a href="view?id=${e.getId() }"> <button>View More</button> </a> </td>
 				<td> <a href="delete?id=${e.getId() }"> <button>Delete</button> </a> </td>
 			</tr>
 		</c:forEach>
 	</table>
 	
+	
+	<select id="status">
+		<option>---STATUS---</option>
+		<option><a href="all"> <button>ACTIVE</button> </a></option>
+		<option><a href="all-inactive"> <button>IN_ACTIVE</button> </a></option>
+	</select>
+	
+	<a href="all"> <button>ACTIVE</button> </a>
+	<a href="all-inactive"> <button>IN_ACTIVE</button> </a>
+	
+	<script type="text/javascript">
+		document.getElementById("status")
+	
+	
+	
+	</script>
 	
 	
 </body>
